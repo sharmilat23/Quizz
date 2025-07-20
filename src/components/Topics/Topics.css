@@ -1,0 +1,106 @@
+.topics-section {
+  padding: 40px 20px;
+  background-color: #f3eaff; /* lighter purple shade */
+  text-align: center;
+}
+
+.topics-section h2 {
+  font-size: 2.5rem;
+  color: #4b0082;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.topic-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 260px;
+  width: 180px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.topic-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.topic-card p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* ✅ Hover Effect */
+.topic-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  background: #f7f2ff; /* subtle hover bg */
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .topics-section h2 {
+    font-size: 2rem;
+  }
+  .topic-card {
+    height: 220px;
+    width: 160px;
+  }
+  .topic-card img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .topics-section {
+    padding: 20px 10px;
+  }
+  .topics-section h2 {
+    font-size: 1.8rem;
+  }
+  .topic-card {
+    height: 200px;
+    width: 140px;
+    padding: 15px;
+  }
+  .topic-card img {
+    width: 70px;
+    height: 70px;
+  }
+}
+/* Own Topic Button */
+.own-topic-btn {
+  background: linear-gradient(135deg, #7b2cbf, #9d4edd);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.own-topic-btn:hover {
+  background: linear-gradient(135deg, #5a189a, #7b2cbf);
+  transform: translateY(-2px);
+}

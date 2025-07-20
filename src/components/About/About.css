@@ -1,0 +1,116 @@
+.about-page {
+  padding: 70px 20px;
+  font-family: "Segoe UI", sans-serif;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+/* ✅ About Intro */
+.about-intro {
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+.about-intro h2 {
+  font-size: 2.5rem;
+  color: #4b0082;
+  margin-bottom: 25px;
+}
+
+.about-intro p {
+  font-size: 1.3rem; /* ✅ Increased font size */
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* ✅ Developer Section */
+.developer-section h2 {
+  font-size: 2.3rem;
+  color: #4b0082;
+  margin-bottom: 35px;
+}
+
+.developer-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  max-width: 750px; /* ✅ Increased width */
+  margin: 0 auto 60px;
+  display: flex;
+  align-items: center;
+  padding: 30px; /* ✅ Increased padding */
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.developer-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+
+.developer-img {
+  width: 150px; /* ✅ Increased size */
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 25px;
+}
+
+.developer-info h3 {
+  font-size: 1.8rem; /* ✅ Bigger font */
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.developer-info p {
+  font-size: 1.2rem; /* ✅ Bigger font */
+  color: #666;
+  font-weight: 500;
+}
+
+.developer-bio {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ✅ Contact Section */
+.contact-section {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px; /* ✅ Increased padding */
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+  font-size: 2.3rem;
+  color: #4b0082;
+  margin-bottom: 25px;
+}
+
+.contact-info p {
+  font-size: 1.2rem; /* ✅ Bigger font */
+  color: #444;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* ✅ Responsive */
+@media (max-width: 600px) {
+  .developer-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .developer-img {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
