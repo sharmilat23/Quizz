@@ -29,15 +29,15 @@ export default function CreateQuizPage() {
         />
       </div>
 
-      <div className="form-group">
+      {/* <div className="form-group">
         <label>Difficulty:</label>
         <select value={difficulty} onChange={(e) => setDifficulty(e.target.value)}>
           <option value="easy">Easy</option>
           <option value="medium">Medium</option>
           <option value="hard">Hard</option>
         </select>
-      </div>
-
+      </div> */}
+{/* 
       <div className="form-group">
         <label>Number of Questions:</label>
         <select value={count} onChange={(e) => setCount(e.target.value)}>
@@ -45,7 +45,7 @@ export default function CreateQuizPage() {
           <option value="10">10</option>
           <option value="15">15</option>
         </select>
-      </div>
+      </div> */}
 
       <button onClick={handleGenerateQuiz} className="generate-btn">
         Generate Quiz
